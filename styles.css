@@ -205,8 +205,9 @@ header {
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 8cqmax;
-    right: 0.15cqmin;
+    top: 0;
+    right: 0;
+    margin: 1px;
     
     svg {
         fill: var(--yellow-400);
