@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bao Tran's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts.js"></script>
+    <link rel="icon" type="image/jpg" href="./imgs/myIcon.jpg">
+</head>
+<body>
+    <header>
+        <button id="theme-switch" onclick="darkmodeButton()">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M11.675 2.015a.998.998 0 0 0-.403.011C6.09 2.4 2 6.722 2 12c0 5.523 4.477 10 10 10 4.356 0 8.058-2.784 9.43-6.667a1 1 0 0 0-1.02-1.33c-.08.006-.105.005-.127.005h-.001l-.028-.002A5.227 5.227 0 0 0 20 14a8 8 0 0 1-8-8c0-.952.121-1.752.404-2.558a.996.996 0 0 0 .096-.428V3a1 1 0 0 0-.825-.985Z" clip-rule="evenodd"/>
+              </svg>
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M13 3a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0V3ZM6.343 4.929A1 1 0 0 0 4.93 6.343l1.414 1.414a1 1 0 0 0 1.414-1.414L6.343 4.929Zm12.728 1.414a1 1 0 0 0-1.414-1.414l-1.414 1.414a1 1 0 0 0 1.414 1.414l1.414-1.414ZM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm-9 4a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2H3Zm16 0a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2h-2ZM7.757 17.657a1 1 0 1 0-1.414-1.414l-1.414 1.414a1 1 0 1 0 1.414 1.414l1.414-1.414Zm9.9-1.414a1 1 0 0 0-1.414 1.414l1.414 1.414a1 1 0 0 0 1.414-1.414l-1.414-1.414ZM13 19a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0v-2Z" clip-rule="evenodd"/>
+              </svg>                            
+        </button>
+        <a href="#" class="logo-holder">
+            <div class="logo">B</div>
+            <div class="logo-text">Clint Chan's Portfolio</div>
+        </a>
+        <nav>
+            <ul id="menu">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="mailto:baongoctranduy278201@gmail.com" class="button">Contact Me</a>
+                </li>
+            </ul>
+            <a href="#" class="mobile-toggle" onclick="toggleMobileMenu();">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+                  </svg>                                
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero container">
+            <div class="hero-blue">
+                <h1><small>Hi I'm</small>
+                    Bao Tran 
+                </h1>
+                <p>
+                    A Vietnam-based Programmer and 
+                    Engineer actively develops and 
+                    implements advanced AI 
+                    technologies to enhance 
+                    real-world applications. 
+                    <span>Always expanding my 
+                    knowledge and discovering 
+                    incredible things. 
+                    </span>
+                </p>
+                <div class="call-to-action">
+                    <a href="./TDNBao_CV.pdf" class="button black">
+                        View Resume
+                    </a>
+                    <a href="mailto:baongoctranduy278201@gmail.com" class="button white">
+                        Contact Me
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/TranDuyNgocBao">
+                        <img src="./imgs/github.png" 
+                        alt="GitHub" width="48">
+                    </a>
+                    <a href="https://www.linkedin.com/in/batoran/">
+                        <img src="./imgs/linkedin.png" 
+                        alt="LinkedIn" width="48">
+                    </a>
+                </div>
+            </div>
+            <div class="hero-yellow">
+                <img src="./imgs/ClintChan.png" alt="Bao Tran" 
+                width="100%"/>
+            </div>
+        </section>
+        <section class="logos container">
+            <div class="marquee">
+                <div class="track">
+                    <img src="./imgs/html.png" 
+                    alt="HTML" width="128" height="128"/>
+                    <img src="./imgs/css.png" 
+                    alt="CSS" width="128" height="128"/>
+                    <img src="./imgs/javascript.png"
+                    alt="JS" width="128" height="128"/>
+                    <img src="./imgs/azure.png"
+                    alt="JS" width="128" height="128"/>
+                    <img src="./imgs/python.png"
+                    alt="JS" width="128" height="128"/>
+                    <img src="./imgs/vscode.png"
+                    alt="JS" width="128" height="128"/>
+                    <img src="./imgs/c++.png"
+                    alt="JS" width="128" height="128"/>
+                    <img src="./imgs/java.png"
+                    alt="JS" width="128" height="128"/>
+                    <img src="./imgs/pytorch.png"
+                    alt="JS" width="128" height="128"/>
+                    <img src="./imgs/microsoft.png"
+                    alt="JS" width="128" height="128"/>
+                    <img src="./imgs/html.png" 
+                    alt="HTML" width="128" height="128"/>
+                    <img src="./imgs/css.png" 
+                    alt="CSS" width="128" height="128"/>
+                    <img src="./imgs/javascript.png"
+                    alt="JS" width="128" height="128"/>
+                    <img src="./imgs/azure.png"
+                    alt="JS" width="128" height="128"/>
+                    <img src="./imgs/python.png"
+                    alt="JS" width="128" height="128"/>
+                    <img src="./imgs/vscode.png"
+                    alt="JS" width="128" height="128"/>
+                    <img src="./imgs/c++.png"
+                    alt="JS" width="128" height="128"/>
+                    <img src="./imgs/java.png"
+                    alt="JS" width="128" height="128"/>
+                    <img src="./imgs/pytorch.png"
+                    alt="JS" width="128" height="128"/>
+                    <img src="./imgs/microsoft.png"
+                    alt="JS" width="128" height="128"/>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="skills container">
+            <h2>
+                <small>About Me</small>
+                Skills
+            </h2>
+            <div class="holder-blue">
+                <div class="left-column">
+                    <h3>Database</h3>
+                    <ul>
+                        <li>SQL</li>
+                        <li>Data Cleansing</li>
+                        <li>Data Visualization</li>
+                    </ul>
+                    <h3>Machine Learning</h3>
+                    <ul>
+                        <li>Statistics</li>
+                        <li>Traditional Modeling</li>
+                        <li>Deep Learning</li>
+                    </ul>
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                    </ul>
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>C/C++</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+                <div class="right-column">
+                    <h3>A bit about me</h3>
+                    <p>Hi, my name is Bao Tran, also known as Clint Chan. I recently graduated with a bachelor's degree in Artificial Intelligence and am seeking opportunities related to my field. While I am reserved, I am approachable and work well with others. Outside of work, I enjoy reading, traveling, and exercising.
+                    </p>
+                    <p>I am confident in data processing, analysis, and AI model development. Driven by my passion for information technology, I continually hone my skills to advance in this field and achieve my career aspirations.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="work-experience container">
+            <h2>
+                <small>Recent</small>
+                Work Experience
+            </h2>
+            <div class="jobs">
+                <article>
+                    <figure>
+                        <div>
+                            <img src="./imgs/fpt_debate.jpg" alt="FPT Debate"
+                            width="100%"/>
+                            <figcaption>
+                                Debate at little UK
+                            </figcaption>
+                        </div>
+                    </figure>
+                    <h3>FPT University</h3>
+                    <div>2020-2024</div>
+                    <p>The dynamic environment fosters greater openness and confidence in my self-expression.</p>
+                </article>
+                <article>
+                    <figure>
+                        <div>
+                            <img src="./imgs/office-building.jpg" alt="Office Building"
+                            width="100%"/>
+                            <figcaption>
+                                Gradients Technologies joint stock company
+                            </figcaption>
+                        </div>
+                    </figure>
+                    <h3>Trainee for six months</h3>
+                    <div>2022-2023</div>
+                    <p>Engaging in real business projects, particularly within this startup company, has provided me with valuable knowledge in managing and operating a small enterprise.</p>
+                </article>
+            </div>
+        </section>
+        <section id="projects" class="bento container">
+            <h2>
+                <small>
+                    Previous
+                </small>
+                Completed Projects
+            </h2>
+            <div class="bento-grid">
+                <a href="https://github.com/TranDuyNgocBao/Detecting-and-Recognizing-License-Plates" class="bento-item">
+                    <img src="./imgs/detect_license_img.gif" alt="License plate recognition" title="Vietnam License Plate Recognition">
+                </a>
+                <a href="https://github.com/TranDuyNgocBao/Clothing_segmentation" class="bento-item">
+                    <img src="./imgs/cloth_segment.gif" alt="Clothing Segmentation" title="Fashion Clothing Segmentation">
+                </a>
+                <a href="https://github.com/TranDuyNgocBao/Graduation_thesis" class="bento-item">
+                    <img src="./imgs/uwi_enhance.gif" alt="Underwater Images Enhance" title="Enhance Resolution and Improve Underwater Image Colors">
+                </a>
+            </div>
+        </section>
+        <section class="future container">
+            <h2>
+                <small>
+                    Want to see more?
+                </small>
+                Topic Of Interest
+            </h2>
+            <div class="group-project">
+                <div class="side-info">
+                    <h3>Research list</h3>
+                    <p>A selection of engaging subjects, featuring associated research and advanced technologies.</p>
+                    <p>My resume is available for download in both <i>Vietnamese</i> and <i>English</i>. <b>Please use the buttons below!</b></p>
+                    <a href="./TDNBao_CV_VN.pdf" class="button white">Vietnamese</a>
+                    <a href="./TDNBao_CV.pdf" class="button black">English</a>
+                </div>
+                <div class="group-box">
+                    <div class="scroll-area">
+                        <div>
+                            <button id ="test1" class="news-active" onclick="showHideButton('card1', 'test1')">
+                                Computer Vision
+                                <span>
+                                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm11-4.243a1 1 0 1 0-2 0V11H7.757a1 1 0 1 0 0 2H11v3.243a1 1 0 1 0 2 0V13h3.243a1 1 0 1 0 0-2H13V7.757Z" clip-rule="evenodd"/>
+                                    </svg>                                 
+                                </span>   
+                                <span>
+                                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm5.757-1a1 1 0 1 0 0 2h8.486a1 1 0 1 0 0-2H7.757Z" clip-rule="evenodd"/>
+                                      </svg>
+                                </span>                                                               
+                            </button>
+                            <div id="card1" class="card">
+                                <h3>Learning Interactive Real-World Simulators</h3>
+                                <img src="./imgs/simulators_paper.png" alt="The simulator of the real-world learns from broad data with diverse information.">
+                                <p></p>
+                                <ul>
+                                    <li>Generative models have revolutionized content creation through internet data.</li>
+                                    <li>Real-world applications of simulators range from creating controllable content in games and movies to training physical agents in simulations.</li>
+                                    <li>Natural datasets for learning real-world simulations are rich in many different dimensions.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <button id ="test2" class="news-active" onclick="showHideButton('card2', 'test2')">
+                                Natural Language Processing
+                                <span>
+                                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm11-4.243a1 1 0 1 0-2 0V11H7.757a1 1 0 1 0 0 2H11v3.243a1 1 0 1 0 2 0V13h3.243a1 1 0 1 0 0-2H13V7.757Z" clip-rule="evenodd"/>
+                                    </svg>
+                                </span>  
+                                <span>
+                                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm5.757-1a1 1 0 1 0 0 2h8.486a1 1 0 1 0 0-2H7.757Z" clip-rule="evenodd"/>
+                                      </svg>
+                                </span>                                                                    
+                            </button>
+                            <div id="card2" class="card">
+                                <h3>The Consensus Game</h3>
+                                <img src="./imgs/MIT-Consensus-Game.png" alt="A new “consensus game,” developed by MIT CSAIL researchers, elevates AI’s text comprehension and generation skills.">
+                                <p></p>
+                                <ul>
+                                    <li>The game consists of two main mechanics: sentence generation (i.e. generating hints) and evaluation of generated sentences (i.e. predicting their meaning).</li>
+                                    <li>Apply this reasoning method to solve problems such as reading comprehension, solving math problems, creating dialogues, and so on.</li>
+                                    <li>The goal is to create a new ranking algorithm that leverages game theory and strategy to solve the problems of large language models more efficiently.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <button id="test3" class="news-active" onclick="showHideButton('card3','test3')">
+                                Generative AI
+                                <span>
+                                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm11-4.243a1 1 0 1 0-2 0V11H7.757a1 1 0 1 0 0 2H11v3.243a1 1 0 1 0 2 0V13h3.243a1 1 0 1 0 0-2H13V7.757Z" clip-rule="evenodd"/>
+                                    </svg>
+                                </span>           
+                                <span>
+                                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm5.757-1a1 1 0 1 0 0 2h8.486a1 1 0 1 0 0-2H7.757Z" clip-rule="evenodd"/>
+                                      </svg>
+                                </span>                                                           
+                            </button>
+                            <div id="card3" class="card">
+                                <h3>Design Proteins For Natural Sweeteners </h3>
+                                <img src="./imgs/protein_AI.png" alt="The process of creating new proteins with specific, target characteristics.">
+                                <p></p>
+                                <ul>
+                                    <li>The discovery of drug-based treatments for diseases and the development of new homecare, agriculture, food-based, and materials products is promising.</li>
+                                    <li>Arzeda's technology merges biophysics-informed AI models with generative AI methods, including large language and diffusion models.</li>
+                                    <li>Arzeda focuses on redesigning chemical-heavy goods using sustainable AI-designed proteins and enzymes, rather than biomedical applications.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <button id="test4" class="news-active" onclick="showHideButton('card4', 'test4')">
+                                Machine Learning
+                                <span>
+                                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm11-4.243a1 1 0 1 0-2 0V11H7.757a1 1 0 1 0 0 2H11v3.243a1 1 0 1 0 2 0V13h3.243a1 1 0 1 0 0-2H13V7.757Z" clip-rule="evenodd"/>
+                                    </svg>
+                                </span>        
+                                <span>
+                                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm5.757-1a1 1 0 1 0 0 2h8.486a1 1 0 1 0 0-2H7.757Z" clip-rule="evenodd"/>
+                                      </svg>
+                                </span>                                                              
+                            </button>
+                            <div id="card4" class="card">
+                                <h3>AI Can't Replace Teaching, but It Can Make It Better</h3>
+                                <img src="./imgs/robots_teachers.jpg" alt="Technology vs. Teachers: Will Technology Replace Teachers?">
+                                <p></p>
+                                <ul>
+                                    <li>Teachers offer emotional and social support, fostering empathy, understanding, and social learning capabilities that AI lacks.</li>
+                                    <li>Fostering intellectual discussions and nurturing creativity are crucial human strengths that promote creative problem-solving and critical thinking.</li>
+                                    <li>Personal mentoring is a human connection that cannot be fully replicated by machines, as it guides personal and emotional growth.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <button id="test5" class="news-active" onclick="showHideButton('card5', 'test5')">
+                                Neural Networks
+                                <span>
+                                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm11-4.243a1 1 0 1 0-2 0V11H7.757a1 1 0 1 0 0 2H11v3.243a1 1 0 1 0 2 0V13h3.243a1 1 0 1 0 0-2H13V7.757Z" clip-rule="evenodd"/>
+                                    </svg>
+                                </span>       
+                                <span>
+                                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm5.757-1a1 1 0 1 0 0 2h8.486a1 1 0 1 0 0-2H7.757Z" clip-rule="evenodd"/>
+                                      </svg>
+                                </span>                                                               
+                            </button>
+                            <div id="card5" class="card">
+                                <h3>AI Peers Into The Deep</h3>
+                                <img src="./imgs/deep_sea.jpg" alt="High-resolution 3D tracking of coral reef fish">
+                                <p></p>
+                                <ul>
+                                    <li>The method provided detailed information on the movement patterns and energy expenditure of two surgeonfish species in their natural habitat in the Red Sea.</li>
+                                    <li>DeepSORT, an algorithm that integrates 3D information from stereo image pairs, accurately tracks individual fish movements even when they are temporarily hidden or obscured by other objects.</li>
+                                    <li>The study emphasizes the significance of niche partitioning and the crucial role of surgeonfishes in maintaining ecological balance in coral reefs.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-message">
+                        <input type="text" placeholder="Chat bar for viewers?">
+                        <button class="button black">In Progress</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- BACK TO TOP BUTTON -->
+	<a href="#" class="back-to-top">
+		<span class="material-icons">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v13m0-13 4 4m-4-4-4 4"/>
+              </svg>              
+        </span>
+	</a>
+</body>
+</html>
