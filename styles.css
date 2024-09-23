@@ -592,6 +592,7 @@ h3 {
                         ul{
                             list-style-type: disc;
                             padding-left: 30px;
+                            padding-bottom: 20px;
                             li {
                                 display: list-item;
                                 text-align: left;
@@ -610,15 +611,15 @@ h3 {
                     flex: 1;
                     padding: 15px;
                     border: 1px solid transparent;
-                    background-color: var(--base-100);
+                    background-color: gray;
                     &:hover {
                         outline: none;
-                        background-color: white;
+                        background-color: rgba(128, 128, 128, 0.756);
                         border: 1px solid var(--base-100);
                     }
                     &:focus {
                         outline: none;
-                        background-color: white;
+                        background-color: rgba(156, 193, 201, 0.821);
                         border: 1px solid var(--base-100);
                     }
                 }
@@ -629,6 +630,10 @@ h3 {
             }
          }
     }
+}
+
+::placeholder{
+    color: rgb(0, 255, 153);
 }
 
 /* BACK TO TOP */
