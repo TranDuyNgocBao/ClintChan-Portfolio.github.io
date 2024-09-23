@@ -1,1 +1,1 @@
-"# ClintChan-Portfolio.github.io" 
+# ClintChan-Portfolio.github.io
